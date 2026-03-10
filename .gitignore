@@ -1,0 +1,66 @@
+# --------------------------------------------------
+# C / C++ binaries and intermediate files
+# --------------------------------------------------
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+*.exe
+*.out
+
+# macOS debug symbols
+*.dSYM/
+
+# --------------------------------------------------
+# CMake / build outputs
+# --------------------------------------------------
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+
+# Ninja
+.ninja_deps
+.ninja_log
+build.ninja
+
+# --------------------------------------------------
+# Binary output directories
+# --------------------------------------------------
+**/output/
+**/bin/
+
+# --------------------------------------------------
+# Data files
+# --------------------------------------------------
+data/*
+
+# Keep the directory if needed
+!data/.gitkeep
+
+# --------------------------------------------------
+# OS generated files
+# --------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------------------------------
+# IDE / editor settings
+# --------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --------------------------------------------------
+# Temporary / backup files
+# --------------------------------------------------
+*~
