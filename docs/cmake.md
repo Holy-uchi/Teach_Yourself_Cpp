@@ -73,6 +73,12 @@ cmake --build build
 
 ---
 
+# compile_commands.json（LSP / clangd）
+
+`CMAKE_EXPORT_COMPILE_COMMANDS ON` により、configure 後に `build/compile_commands.json` が生成されます。Neovim の clangd など LSP で定義ジャンプ・参照検索を使う場合は、リポジトリルートから `build/compile_commands.json` へのシンボリックリンクを張るとよいです。詳しくは [Neovim + clangd](neovim-clangd.md) を参照してください。
+
+---
+
 # Running Programs
 
 Each executable automatically gets a **run target**.
